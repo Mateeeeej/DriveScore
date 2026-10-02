@@ -3,54 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Noble Finances</title>
+    <style>
+      body {
+        background-color: #cbcbcb;
+        margin: 0;
+        font-size: 0.7rlh;
+        font-family: "Work Sans", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .horni_zeleny_blok {
+        background-color: #a0f1bd;
+        height: 37rlh;
+        border-bottom-right-radius: 2rlh;
+        border-bottom-left-radius: 2rlh;
+        outline: 1px solid red;
+      }
+
+      nav {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        column-gap: 1rlh;
+        align-items: center;
+        padding: 1rlh 1.5rlh;
+        color: #2e4f21;
+        outline: 1px solid red;
+      }
+
+      .noble-finances {
+        justify-self: start;
+        font-size: 0.8rlh;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .services {
+        justify-self: end;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .book-appointment {
+        background-color: #2e4f21;
+        color: white;
+        padding: 0.6rlh 1.2rlh;
+        border-radius: 1rlh;
+        justify-self: end;
+        white-space: nowrap;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+        cursor: pointer;
+      }
+      .book-appointment:hover {
+        background-color: #fdfdfd;
+        color: #2e4f21;
+      }
+
+      @media (max-width: 768px) {
+        .appointment {
+          display: none;
+        }
+      }
+      h1 {
+        text-align: left;
+        display: grid;
+        grid-template-columns: auto;
+        justify-self: start;
+        color: #2e4f21;
+        font-size: 3rlh;
+        outline: 1px solid red;
+        padding-top: 5rlh;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: left;
+        text-align: center;
+        align-items: start;
+        column-gap: 1rlh;
+        padding-top: 3rlh;
+        outline: 1px solid red;
+        padding-left: 1rlh;
+        padding-right: 1rlh;
+      }
+      img {
+        width: 50%;
+        height: auto;
+        outline: 1px solid red;
+        padding-left: 10rlh;
+      }
+      .description {
+        text-align: left;
+        color: #2e4f21;
+        outline: 1px solid red;
+        align-self: start;
+        line-height: 1rlh;
+        margin: 0;
+        margin-bottom: 1rlh;
+        margin-top: -2rlh;
+      }
+      .connect {
+        background-color: #2e4f21;
+        color: white;
+        padding: 0.6rlh 1.2rlh;
+        border-radius: 1rlh;
+        white-space: nowrap;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+        cursor: pointer;
+        outline: 1px solid red;
+      }
+      .connect:hover {
+        background-color: #fdfdfd;
+        color: #2e4f21;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background-color: #cbcbcb;
-      width: auto;
-      margin: auto;
-      font-family:
-        Work Sans,
-        sans-serif;
-    }
-    .horni_zeleny_blok {
-      background-color: #a0f1bd;
-      width: auto;
-      margin: auto;
-      height: 40rlh;
-      border-bottom-right-radius: 2rlh;
-      border-bottom-left-radius: 2rlh;
-    }
-    nav {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      align-items: center;
-      padding-top: 1rlh;
-      color:#2e4f21;
-    }
-    .services {
-      margin-left: 30rlh;
-    }
-    .noble-finances {
-      margin-left: 2rlh;
-      font-weight: bold;
-    }
-    .book-appointment {
-      background-color: #2e4f21;
-      color: white;
-      padding: 1rlh;
-      padding-right: -2rlh;
-      border-radius: 1rlh;
-    }
-  </style>
   <body>
     <div class="horni_zeleny_blok">
       <nav>
         <span class="noble-finances">Noble Finances</span>
         <span class="services">Services</span>
-        <span class="book-appointment">Book an appointment</span>
+        <span class="book-appointment"
+          >Book<span class="appointment"> an appointment</span></span
+        >
       </nav>
+      <div class="container">
+        <div></div>
+        <h1>
+          Financial Clarity You <br />
+          Can Trust
+        </h1>
+        <img src="Image.png" alt="zeme" />
+        <p class="description">
+          Trusted financial guidance for every stage of life and business since
+          1987
+        </p>
+        <br />
+        <p class="connect">Connect with our experts</p>
+      </div>
     </div>
   </body>
 </html>
