@@ -1,0 +1,9 @@
+body.pozadi {
+    background-color: #0B1120;
+    min-height: 100vh;
+    color: white;
+}
+
+h1, h2, h3, p {
+    font-family: "Staatliches", sans-serif ;
+}
