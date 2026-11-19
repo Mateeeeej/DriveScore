@@ -23,35 +23,39 @@
 
     <title>DriveScore</title>
   </head>
-  <body class="pozadi d-flex flex-column min-vh-100">
+  <body class="pozadi">
     @include('navigace')
 
-    <main class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center py-4">
-      <h1 class="h4 text-white mb-1">DriveScore</h1>
-      <p class="small text-white-50 mb-4">Sleduj. Analyzuj. Zlepšuj svou jízdu.</p>
+    <div class="container text-center mt-5 text-white">
+      <h1>DriveScore</h1>
+      <p class="mt-3">Sleduj. Analyzuj. Zlepšuj svou jízdu.</p>
+    </div>
 
+    <div class="container text-center mt-4">
       <img
         src="logo.png"
         alt="Logo"
-        class="img-fluid mb-4"
-        style="max-width: 10rlh;"
+        class="img-fluid d-block mx-auto"
+        style="max-width: 25rlh;"
       />
 
-      <div class="d-grid gap-2 w-100" style="max-width: 155px;">
+      <div class="d-grid gap-2 mx-auto mt-4" style="max-width: 130px;">
         <a
           href="/login"
-          class="btn btn-primary btn-sm rounded-pill border-2 border-info-subtle fs-6"
+          class="btn btn-primary btn-sm rounded-pill border border-info-subtle py-1"
+          style="font-size: 0.85rem;"
         >
           PŘIHLÁSIT
         </a>
 
         <a
           href="/register"
-          class="btn btn-outline-primary btn-sm rounded-pill border-2 text-white fs-6"
+          class="btn btn-outline-primary btn-sm rounded-pill border text-white py-1"
+          style="font-size: 0.85rem;"
         >
           REGISTRACE
         </a>
       </div>
-    </main>
+    </div>
   </body>
 </html>
