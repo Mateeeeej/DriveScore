@@ -23,39 +23,40 @@
 
     <title>DriveScore</title>
   </head>
-  <body class="pozadi">
+  <body class="pozadi d-flex flex-column min-vh-100">
     @include('navigace')
 
-    <div class="container text-center mt-5 text-white">
-      <h1>DriveScore</h1>
-      <p class="mt-3">Sleduj. Analyzuj. Zlepšuj svou jízdu.</p>
-    </div>
+    <main class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center pb-5">
+      <h1 class="fs-4 mb-0">DriveScore</h1>
+      <p class="text-white-50 mb-3" style="font-size: 0.75rem;">
+        Sleduj. Analyzuj. Zlepšuj svou jízdu.
+      </p>
 
-    <div class="container text-center mt-4">
+      <!-- Obrázek beze změny -->
       <img
         src="logo.png"
         alt="Logo"
-        class="img-fluid d-block mx-auto"
-        style="max-width: 25rlh;"
+        class="img-fluid col-8 col-sm-5 col-md-3 mb-3"
       />
 
-      <div class="d-grid gap-2 mx-auto mt-4" style="max-width: 130px;">
+      <!-- Úzká a nízká tlačítka -->
+      <div class="d-grid gap-1 w-100" style="max-width: 115px;">
         <a
           href="/login"
-          class="btn btn-primary btn-sm rounded-pill border border-info-subtle py-1"
-          style="font-size: 0.85rem;"
+          class="btn btn-primary btn-sm rounded-pill border-info-subtle py-0"
+          style="font-size: 0.75rem;"
         >
           PŘIHLÁSIT
         </a>
 
         <a
           href="/register"
-          class="btn btn-outline-primary btn-sm rounded-pill border text-white py-1"
-          style="font-size: 0.85rem;"
+          class="btn btn-outline-primary btn-sm rounded-pill text-white py-0"
+          style="font-size: 0.75rem;"
         >
           REGISTRACE
         </a>
       </div>
-    </div>
+    </main>
   </body>
 </html>

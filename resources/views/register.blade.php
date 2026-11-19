@@ -12,7 +12,7 @@
 
     <div class="card bg-dark bg-opacity-75 text-white border-secondary rounded-4 shadow-lg p-4 w-100" data-bs-theme="dark" style="max-width: 360px; backdrop-filter: blur(10px);">
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="h4 mb-0">Registrace</h2>
+            <h2 class="h4 mb-0 ">Registrace</h2>
             <a href="/" class="btn btn-sm btn-outline-light rounded-pill px-3">← Zpět</a>
         </div>
 
