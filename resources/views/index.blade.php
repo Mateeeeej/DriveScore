@@ -23,36 +23,35 @@
 
     <title>DriveScore</title>
   </head>
-  <body class="pozadi">
+  <body class="pozadi d-flex flex-column min-vh-100">
     @include('navigace')
 
-    <div class="container text-center mt-4 text-white">
-      <h1 class="h2">DriveScore</h1>
-    </div>
+    <main class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center py-4">
+      <h1 class="h4 text-white mb-1">DriveScore</h1>
+      <p class="small text-white-50 mb-4">Sleduj. Analyzuj. Zlepšuj svou jízdu.</p>
 
-    <div class="container text-center mt-2 text-white">
-      <p class="small">Sleduj. Analyzuj. Zlepšuj svou jízdu.</p>
-    </div>
+      <img
+        src="logo.png"
+        alt="Logo"
+        class="img-fluid mb-4"
+        style="max-width: 10rlh;"
+      />
 
-    <div class="container text-center mt-4">
-      <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 16rlh;" />
-
-      <!-- Menší tlačítka přes Bootstrap -->
-      <div class="d-grid gap-2 mx-auto mt-4" style="max-width: 175px;">
+      <div class="d-grid gap-2 w-100" style="max-width: 155px;">
         <a
           href="/login"
-          class="btn btn-primary rounded-pill border-2 border-info-subtle fs-5 py-1"
+          class="btn btn-primary btn-sm rounded-pill border-2 border-info-subtle fs-6"
         >
           PŘIHLÁSIT
         </a>
 
         <a
           href="/register"
-          class="btn btn-outline-primary rounded-pill border-2 text-white fs-5 py-1"
+          class="btn btn-outline-primary btn-sm rounded-pill border-2 text-white fs-6"
         >
           REGISTRACE
         </a>
       </div>
-    </div>
+    </main>
   </body>
 </html>
